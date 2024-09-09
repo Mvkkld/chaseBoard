@@ -21,18 +21,20 @@
             border-collapse: collapse;
             margin: 20px auto;
             background-color: lightgrey;
+            width: 100%;
+            max-width: 800px; /* Adjust max-width as needed */
         }
 
         th {
             width: 12.5%;
-            height: 0;
             padding: 0;
+            height: 0;
         }
 
         img {
-            display: block;
             width: 100%;
             height: auto;
+            display: block;
         }
 
         .dark {
@@ -103,7 +105,7 @@
 </head>
 <body>
     <h1>ChessBoard</h1>
-    <table border="3">
+    <table>
         <thead>
             <tr>
                 <th class="dark"><img src="images/rook.png" alt="Rook"></th>
