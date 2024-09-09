@@ -3,100 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment chess Board M.Nizam</title>
+    <title>Assignment Chess Board M.Nizam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: lightgrey;
+        }
+
+        th {
+            width: 12.5%;
+            height: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .dark {
+            background-color: #000;
+        }
+
+        .light {
+            background-color: #fff;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                border: 2px solid #000;
+            }
+
+            th {
+                width: 12.5%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                width: 100%;
+                border: 1px solid #000;
+            }
+
+            th {
+                width: 25%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
 </head>
 <body>
     <h1>ChessBoard</h1>
-    <table border="3" align="ChaseBoard" bgcolor="lightgrey">
-    <thead>
-        <tr>
-            <th><img src="images/rook.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/knightWhiteOnBlack.png" alt="" height="80" width="80"></th>
-            <th><img src="images/bshpBlackOnwhite.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/qunwhiteobblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/king.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/BshpWhiteOnBlack.png" alt="" height="80" width="80"></th>
-            <th><img src="images/44.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/rokkwhiteOnBlack.png" alt="" height="80" width="80"></th>
-        </tr>
-        <tr>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-        </tr>
-        <tr>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-        </tr>
-        <tr>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th ></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-        </tr>
-        <tr>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-            <th bgcolor="0004" with="80" height="80"></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th ><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/pawn.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/pwnwhiteOnblack.jpg" alt="" height="80" width="80"></th>
-        </tr>
-        <tr>
-            <th bgcolor="0004"><img src="images/rokkwhiteOnBlack.png" alt="" height="80" width="80"></th>
-            <th><img src="images/44.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/BshpWhiteOnBlack.png" alt="" height="80" width="80"></th>
-            <th><img src="images/queen.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/kngwhitonBlack.jpg" alt="" height="80" width="80"></th>
-            <th><img src="images/bshpBlackOnwhite.png" alt="" height="80" width="80"></th>
-            <th bgcolor="0004"><img src="images/knightWhiteOnBlack.png" alt="" height="80" width="80"></th>
-            <th><img src="images/rook.png" alt="" height="80" width="80"></th>
-        </tr>
-       
-    </thead>
+    <table border="3">
+        <thead>
+            <tr>
+                <th class="dark"><img src="images/rook.png" alt="Rook"></th>
+                <th class="light"><img src="images/knightWhiteOnBlack.png" alt="Knight"></th>
+                <th class="dark"><img src="images/bshpBlackOnwhite.png" alt="Bishop"></th>
+                <th class="light"><img src="images/qunwhiteobblack.jpg" alt="Queen"></th>
+                <th class="dark"><img src="images/king.png" alt="King"></th>
+                <th class="light"><img src="images/BshpWhiteOnBlack.png" alt="Bishop"></th>
+                <th class="dark"><img src="images/44.png" alt="Piece"></th>
+                <th class="light"><img src="images/rokkwhiteOnBlack.png" alt="Rook"></th>
+            </tr>
+            <tr>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+            </tr>
+            <tr>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+            </tr>
+            <tr>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+            </tr>
+            <tr>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+            </tr>
+            <tr>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+                <th class="light"></th>
+                <th class="dark"></th>
+            </tr>
+            <tr>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+                <th class="dark"><img src="images/pawn.png" alt="Pawn"></th>
+                <th class="light"><img src="images/pwnwhiteOnblack.jpg" alt="Pawn"></th>
+            </tr>
+            <tr>
+                <th class="light"><img src="images/rokkwhiteOnBlack.png" alt="Rook"></th>
+                <th class="dark"><img src="images/44.png" alt="Piece"></th>
+                <th class="light"><img src="images/BshpWhiteOnBlack.png" alt="Bishop"></th>
+                <th class="dark"><img src="images/queen.png" alt="Queen"></th>
+                <th class="light"><img src="images/kngwhitonBlack.jpg" alt="King"></th>
+                <th class="dark"><img src="images/bshpBlackOnwhite.png" alt="Bishop"></th>
+                <th class="light"><img src="images/knightWhiteOnBlack.png" alt="Knight"></th>
+                <th class="dark"><img src="images/rook.png" alt="Rook"></th>
+            </tr>
+        </thead>
     </table>
     <form>
         <p>Subscribe to our email list:</p>
         <input type="text" name="email" placeholder="Email" />
-        <input type="submit" name="submit" 
-         value="Subscribe" />
-        </form>
+        <input type="submit" name="submit" value="Subscribe" />
+    </form>
 </body>
 </html>
